@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06FD13DD158482D400FDCD9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06FD13DC158482D400FDCD9E /* Foundation.framework */; };
+		06FD13E3158482D400FDCD9E /* MUKImageFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FD13E2158482D400FDCD9E /* MUKImageFetcher.m */; };
+		06FD13EB158482D400FDCD9E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06FD13EA158482D400FDCD9E /* SenTestingKit.framework */; };
+		06FD13ED158482D400FDCD9E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06FD13EC158482D400FDCD9E /* UIKit.framework */; };
+		06FD13EE158482D400FDCD9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06FD13DC158482D400FDCD9E /* Foundation.framework */; };
+		06FD13F1158482D400FDCD9E /* libMUKImageFetcher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06FD13D9158482D400FDCD9E /* libMUKImageFetcher.a */; };
+		06FD13F7158482D400FDCD9E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06FD13F5158482D400FDCD9E /* InfoPlist.strings */; };
+		06FD13FA158482D400FDCD9E /* MUKImageFetcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FD13F9158482D400FDCD9E /* MUKImageFetcherTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06FD13EF158482D400FDCD9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06FD13D0158482D300FDCD9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06FD13D8158482D400FDCD9E;
+			remoteInfo = MUKImageFetcher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06FD13D9158482D400FDCD9E /* libMUKImageFetcher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMUKImageFetcher.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		06FD13DC158482D400FDCD9E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		06FD13E0158482D400FDCD9E /* MUKImageFetcher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MUKImageFetcher-Prefix.pch"; sourceTree = "<group>"; };
+		06FD13E1158482D400FDCD9E /* MUKImageFetcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MUKImageFetcher.h; sourceTree = "<group>"; };
+		06FD13E2158482D400FDCD9E /* MUKImageFetcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MUKImageFetcher.m; sourceTree = "<group>"; };
+		06FD13E9158482D400FDCD9E /* MUKImageFetcherTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MUKImageFetcherTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		06FD13EA158482D400FDCD9E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		06FD13EC158482D400FDCD9E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		06FD13F4158482D400FDCD9E /* MUKImageFetcherTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MUKImageFetcherTests-Info.plist"; sourceTree = "<group>"; };
+		06FD13F6158482D400FDCD9E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		06FD13F8158482D400FDCD9E /* MUKImageFetcherTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MUKImageFetcherTests.h; sourceTree = "<group>"; };
+		06FD13F9158482D400FDCD9E /* MUKImageFetcherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MUKImageFetcherTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06FD13D6158482D400FDCD9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06FD13DD158482D400FDCD9E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06FD13E5158482D400FDCD9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06FD13EB158482D400FDCD9E /* SenTestingKit.framework in Frameworks */,
+				06FD13ED158482D400FDCD9E /* UIKit.framework in Frameworks */,
+				06FD13EE158482D400FDCD9E /* Foundation.framework in Frameworks */,
+				06FD13F1158482D400FDCD9E /* libMUKImageFetcher.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06FD13CE158482D300FDCD9E = {
+			isa = PBXGroup;
+			children = (
+				06FD13DE158482D400FDCD9E /* MUKImageFetcher */,
+				06FD13F2158482D400FDCD9E /* MUKImageFetcherTests */,
+				06FD13DB158482D400FDCD9E /* Frameworks */,
+				06FD13DA158482D400FDCD9E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		06FD13DA158482D400FDCD9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06FD13D9158482D400FDCD9E /* libMUKImageFetcher.a */,
+				06FD13E9158482D400FDCD9E /* MUKImageFetcherTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06FD13DB158482D400FDCD9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06FD13DC158482D400FDCD9E /* Foundation.framework */,
+				06FD13EA158482D400FDCD9E /* SenTestingKit.framework */,
+				06FD13EC158482D400FDCD9E /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		06FD13DE158482D400FDCD9E /* MUKImageFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				06FD13E1158482D400FDCD9E /* MUKImageFetcher.h */,
+				06FD13E2158482D400FDCD9E /* MUKImageFetcher.m */,
+				06FD13DF158482D400FDCD9E /* Supporting Files */,
+			);
+			path = MUKImageFetcher;
+			sourceTree = "<group>";
+		};
+		06FD13DF158482D400FDCD9E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				06FD13E0158482D400FDCD9E /* MUKImageFetcher-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		06FD13F2158482D400FDCD9E /* MUKImageFetcherTests */ = {
+			isa = PBXGroup;
+			children = (
+				06FD13F8158482D400FDCD9E /* MUKImageFetcherTests.h */,
+				06FD13F9158482D400FDCD9E /* MUKImageFetcherTests.m */,
+				06FD13F3158482D400FDCD9E /* Supporting Files */,
+			);
+			path = MUKImageFetcherTests;
+			sourceTree = "<group>";
+		};
+		06FD13F3158482D400FDCD9E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				06FD13F4158482D400FDCD9E /* MUKImageFetcherTests-Info.plist */,
+				06FD13F5158482D400FDCD9E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		06FD13D7158482D400FDCD9E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		06FD13D8158482D400FDCD9E /* MUKImageFetcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06FD13FD158482D400FDCD9E /* Build configuration list for PBXNativeTarget "MUKImageFetcher" */;
+			buildPhases = (
+				06FD13D5158482D400FDCD9E /* Sources */,
+				06FD13D6158482D400FDCD9E /* Frameworks */,
+				06FD13D7158482D400FDCD9E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MUKImageFetcher;
+			productName = MUKImageFetcher;
+			productReference = 06FD13D9158482D400FDCD9E /* libMUKImageFetcher.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		06FD13E8158482D400FDCD9E /* MUKImageFetcherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06FD1400158482D400FDCD9E /* Build configuration list for PBXNativeTarget "MUKImageFetcherTests" */;
+			buildPhases = (
+				06FD13E4158482D400FDCD9E /* Sources */,
+				06FD13E5158482D400FDCD9E /* Frameworks */,
+				06FD13E6158482D400FDCD9E /* Resources */,
+				06FD13E7158482D400FDCD9E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06FD13F0158482D400FDCD9E /* PBXTargetDependency */,
+			);
+			name = MUKImageFetcherTests;
+			productName = MUKImageFetcherTests;
+			productReference = 06FD13E9158482D400FDCD9E /* MUKImageFetcherTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06FD13D0158482D300FDCD9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 06FD13D3158482D300FDCD9E /* Build configuration list for PBXProject "MUKImageFetcher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 06FD13CE158482D300FDCD9E;
+			productRefGroup = 06FD13DA158482D400FDCD9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06FD13D8158482D400FDCD9E /* MUKImageFetcher */,
+				06FD13E8158482D400FDCD9E /* MUKImageFetcherTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06FD13E6158482D400FDCD9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06FD13F7158482D400FDCD9E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06FD13E7158482D400FDCD9E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06FD13D5158482D400FDCD9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06FD13E3158482D400FDCD9E /* MUKImageFetcher.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06FD13E4158482D400FDCD9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06FD13FA158482D400FDCD9E /* MUKImageFetcherTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06FD13F0158482D400FDCD9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06FD13D8158482D400FDCD9E /* MUKImageFetcher */;
+			targetProxy = 06FD13EF158482D400FDCD9E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		06FD13F5158482D400FDCD9E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06FD13F6158482D400FDCD9E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		06FD13FB158482D400FDCD9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		06FD13FC158482D400FDCD9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		06FD13FE158482D400FDCD9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/MUKImageFetcher.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MUKImageFetcher/MUKImageFetcher-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		06FD13FF158482D400FDCD9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/MUKImageFetcher.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MUKImageFetcher/MUKImageFetcher-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		06FD1401158482D400FDCD9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MUKImageFetcher/MUKImageFetcher-Prefix.pch";
+				INFOPLIST_FILE = "MUKImageFetcherTests/MUKImageFetcherTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		06FD1402158482D400FDCD9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MUKImageFetcher/MUKImageFetcher-Prefix.pch";
+				INFOPLIST_FILE = "MUKImageFetcherTests/MUKImageFetcherTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06FD13D3158482D300FDCD9E /* Build configuration list for PBXProject "MUKImageFetcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06FD13FB158482D400FDCD9E /* Debug */,
+				06FD13FC158482D400FDCD9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06FD13FD158482D400FDCD9E /* Build configuration list for PBXNativeTarget "MUKImageFetcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06FD13FE158482D400FDCD9E /* Debug */,
+				06FD13FF158482D400FDCD9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		06FD1400158482D400FDCD9E /* Build configuration list for PBXNativeTarget "MUKImageFetcherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06FD1401158482D400FDCD9E /* Debug */,
+				06FD1402158482D400FDCD9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 06FD13D0158482D300FDCD9E /* Project object */;
+}
