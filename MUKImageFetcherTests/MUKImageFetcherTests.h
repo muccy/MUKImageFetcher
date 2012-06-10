@@ -7,7 +7,8 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
+#import "MUKImageFetcher.h"
 
 @interface MUKImageFetcherTests : SenTestCase
-
+@property (nonatomic, strong) MUKImageFetcher *imageFetcher;
 @end

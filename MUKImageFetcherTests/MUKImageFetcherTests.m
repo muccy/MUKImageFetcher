@@ -9,17 +9,16 @@
 #import "MUKImageFetcherTests.h"
 
 @implementation MUKImageFetcherTests
+@synthesize imageFetcher = imageFetcher_;
 
-- (void)setUp
-{
+- (void)setUp {
     [super setUp];
-    
-    // Set-up code here.
+    self.imageFetcher = [[MUKImageFetcher alloc] init];
 }
 
-- (void)tearDown
-{
-    // Tear-down code here.
+- (void)tearDown {
+    self.imageFetcher.shouldStartConnectionHandler = nil;
+    self.imageFetcher = nil;
     
     [super tearDown];
 }
