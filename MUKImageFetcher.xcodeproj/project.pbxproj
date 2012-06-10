@@ -42,6 +42,8 @@
 		06FD148A158487C500FDCD9E /* MUK+Geometry.h in Copy MUKToolkit public headers */ = {isa = PBXBuildFile; fileRef = 06FD14771584879800FDCD9E /* MUK+Geometry.h */; };
 		06FD148B158487C500FDCD9E /* MUK+Object.h in Copy MUKToolkit public headers */ = {isa = PBXBuildFile; fileRef = 06FD14781584879800FDCD9E /* MUK+Object.h */; };
 		06FD148C158487C500FDCD9E /* MUK+Data.h in Copy MUKToolkit public headers */ = {isa = PBXBuildFile; fileRef = 06FD14791584879800FDCD9E /* MUK+Data.h */; };
+		06FD14A01584895D00FDCD9E /* MUKImageFetcherURLConnectionQueue_.h in Headers */ = {isa = PBXBuildFile; fileRef = 06FD149E1584895D00FDCD9E /* MUKImageFetcherURLConnectionQueue_.h */; };
+		06FD14A11584895D00FDCD9E /* MUKImageFetcherURLConnectionQueue_.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FD149F1584895D00FDCD9E /* MUKImageFetcherURLConnectionQueue_.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +128,8 @@
 		06FD14771584879800FDCD9E /* MUK+Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MUK+Geometry.h"; path = "Submodules/MUKToolkit/MUKToolkit/Classes/Geometry/MUK+Geometry.h"; sourceTree = SOURCE_ROOT; };
 		06FD14781584879800FDCD9E /* MUK+Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MUK+Object.h"; path = "Submodules/MUKToolkit/MUKToolkit/Classes/Object/MUK+Object.h"; sourceTree = SOURCE_ROOT; };
 		06FD14791584879800FDCD9E /* MUK+Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MUK+Data.h"; path = "Submodules/MUKToolkit/MUKToolkit/Classes/Data/MUK+Data.h"; sourceTree = SOURCE_ROOT; };
+		06FD149E1584895D00FDCD9E /* MUKImageFetcherURLConnectionQueue_.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUKImageFetcherURLConnectionQueue_.h; sourceTree = "<group>"; };
+		06FD149F1584895D00FDCD9E /* MUKImageFetcherURLConnectionQueue_.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUKImageFetcherURLConnectionQueue_.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +187,7 @@
 		06FD13DE158482D400FDCD9E /* MUKImageFetcher */ = {
 			isa = PBXGroup;
 			children = (
+				06FD149D1584894900FDCD9E /* Private Classes */,
 				06FD13E1158482D400FDCD9E /* MUKImageFetcher.h */,
 				06FD13E2158482D400FDCD9E /* MUKImageFetcher.m */,
 				06FD13DF158482D400FDCD9E /* Supporting Files */,
@@ -262,6 +267,15 @@
 			name = MUKToolkit;
 			sourceTree = "<group>";
 		};
+		06FD149D1584894900FDCD9E /* Private Classes */ = {
+			isa = PBXGroup;
+			children = (
+				06FD149E1584895D00FDCD9E /* MUKImageFetcherURLConnectionQueue_.h */,
+				06FD149F1584895D00FDCD9E /* MUKImageFetcherURLConnectionQueue_.m */,
+			);
+			path = "Private Classes";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -283,6 +297,7 @@
 				06FD14801584879800FDCD9E /* MUK+Geometry.h in Headers */,
 				06FD14811584879800FDCD9E /* MUK+Object.h in Headers */,
 				06FD14821584879800FDCD9E /* MUK+Data.h in Headers */,
+				06FD14A01584895D00FDCD9E /* MUKImageFetcherURLConnectionQueue_.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +417,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06FD13E3158482D400FDCD9E /* MUKImageFetcher.m in Sources */,
+				06FD14A11584895D00FDCD9E /* MUKImageFetcherURLConnectionQueue_.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

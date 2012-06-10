@@ -36,7 +36,7 @@ typedef enum {
     
     MUKImageFetcherSearchDomainFile         =   1 << 2,
     
-    MUKImageFetcherSearchDomainLocal        = (MUKImageFetcherSearchDomainCache|MUKImageFetcherSearchDomainFile),
+    MUKImageFetcherSearchDomainLocal        =   (MUKImageFetcherSearchDomainCache|MUKImageFetcherSearchDomainFile),
     
     MUKImageFetcherSearchDomainRemote       =   1 << 3,
     
