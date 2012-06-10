@@ -5,10 +5,10 @@
       location = "container:"
       name = "Dependencies">
       <FileRef
-         location = "group:Submodules/MUKObjectCache/MUKObjectCache.xcodeproj">
+         location = "group:Submodules/MUKToolkit/MUKToolkit.xcodeproj">
       </FileRef>
       <FileRef
-         location = "group:Submodules/MUKObjectCache/Submodules/MUKToolkit/MUKToolkit.xcodeproj">
+         location = "group:Submodules/MUKObjectCache/MUKObjectCache.xcodeproj">
       </FileRef>
       <FileRef
          location = "group:Submodules/MUKNetworking/MUKNetworking.xcodeproj">
