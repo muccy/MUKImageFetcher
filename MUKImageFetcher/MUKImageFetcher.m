@@ -140,28 +140,27 @@
              // Image not found
              
              // Load from disk (if requested)
-             if ([imageURL isFileURL]) {
-                 if ([MUK bitmask:searchDomains containsFlag:MUKImageFetcherSearchDomainFile])
-                 {
-                     dispatch_queue_t queue = dispatch_queue_create("it.melive.mukit.MUKImageFetcher.FileImageLoading", NULL);
-                     dispatch_async(queue, ^{
-                         UIImage *image = [[UIImage alloc] initWithContentsOfFile:[imageURL path]];
-                         
-                         dispatch_async(dispatch_get_main_queue(), ^{
-                             // Cache it to memory (if requested)
-                             if ([MUK bitmask:cacheLocations containsFlag:MUKObjectCacheLocationMemory])
-                             {
-                                 [self.cache saveObject:image forKey:cacheKey locations:MUKObjectCacheLocationMemory completionHandler:nil];
-                             }
-                             
-                             // Notify loading completion
-                             completionHandler(image, MUKImageFetcherSearchDomainFile);
-                         }); // dispatch_async on main queue
-                     }); // dispatch_async in image loading queue
+             if ([MUK bitmask:searchDomains containsFlag:MUKImageFetcherSearchDomainFile] &&
+                 [imageURL isFileURL]) 
+             {
+                 dispatch_queue_t queue = dispatch_queue_create("it.melive.mukit.MUKImageFetcher.FileImageLoading", NULL);
+                 dispatch_async(queue, ^{
+                     UIImage *image = [[UIImage alloc] initWithContentsOfFile:[imageURL path]];
                      
-                     // Dispose queue
-                     dispatch_release(queue);
-                 }
+                     dispatch_async(dispatch_get_main_queue(), ^{
+                         // Cache it to memory (if requested)
+                         if ([MUK bitmask:cacheLocations containsFlag:MUKObjectCacheLocationMemory])
+                         {
+                             [self.cache saveObject:image forKey:cacheKey locations:MUKObjectCacheLocationMemory completionHandler:nil];
+                         }
+                         
+                         // Notify loading completion
+                         completionHandler(image, MUKImageFetcherSearchDomainFile);
+                     }); // dispatch_async on main queue
+                 }); // dispatch_async in image loading queue
+                 
+                 // Dispose queue
+                 dispatch_release(queue);
              } // if image URL is file URL
              
              // Download from remote (if requested)
