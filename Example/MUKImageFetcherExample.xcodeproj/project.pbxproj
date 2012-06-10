@@ -13,7 +13,100 @@
 		06FD141D1584834100FDCD9E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06FD141B1584834100FDCD9E /* InfoPlist.strings */; };
 		06FD141F1584834100FDCD9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FD141E1584834100FDCD9E /* main.m */; };
 		06FD14231584834100FDCD9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FD14221584834100FDCD9E /* AppDelegate.m */; };
+		06FD14CC1584952200FDCD9E /* ImageFetcherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FD14CB1584952200FDCD9E /* ImageFetcherViewController.m */; };
+		06FD150A158495F900FDCD9E /* libMUKImageFetcher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06FD14D81584959F00FDCD9E /* libMUKImageFetcher.a */; };
+		06FD150B158495F900FDCD9E /* libMUKNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06FD14F1158495C500FDCD9E /* libMUKNetworking.a */; };
+		06FD150C158495F900FDCD9E /* libMUKObjectCache.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06FD14F8158495C500FDCD9E /* libMUKObjectCache.a */; };
+		06FD150D158495F900FDCD9E /* libMUKToolkit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06FD14FF158495C500FDCD9E /* libMUKToolkit.a */; };
+		06FD150F158495FF00FDCD9E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06FD150E158495FF00FDCD9E /* Security.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06FD14D71584959F00FDCD9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06FD14CE1584959E00FDCD9E /* MUKImageFetcher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06FD13D9158482D400FDCD9E;
+			remoteInfo = MUKImageFetcher;
+		};
+		06FD14D91584959F00FDCD9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06FD14CE1584959E00FDCD9E /* MUKImageFetcher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06FD13E9158482D400FDCD9E;
+			remoteInfo = MUKImageFetcherTests;
+		};
+		06FD14F0158495C500FDCD9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06FD14DB158495C400FDCD9E /* MUKNetworking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0656683E1517A85A00DA53AA;
+			remoteInfo = MUKNetworking;
+		};
+		06FD14F2158495C500FDCD9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06FD14DB158495C400FDCD9E /* MUKNetworking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0656684E1517A85A00DA53AA;
+			remoteInfo = MUKNetworkingTests;
+		};
+		06FD14F7158495C500FDCD9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06FD14DE158495C400FDCD9E /* MUKObjectCache.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 066F8468154ECD6B00704724;
+			remoteInfo = MUKObjectCache;
+		};
+		06FD14F9158495C500FDCD9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06FD14DE158495C400FDCD9E /* MUKObjectCache.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 066F8478154ECD6B00704724;
+			remoteInfo = MUKObjectCacheTests;
+		};
+		06FD14FE158495C500FDCD9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06FD14E1158495C400FDCD9E /* MUKToolkit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 065793871523337F00D6762A;
+			remoteInfo = MUKToolkit;
+		};
+		06FD1500158495C500FDCD9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06FD14E1158495C400FDCD9E /* MUKToolkit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 065793971523337F00D6762A;
+			remoteInfo = MUKToolkitTests;
+		};
+		06FD1502158495F100FDCD9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06FD14DE158495C400FDCD9E /* MUKObjectCache.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 066F8467154ECD6A00704724;
+			remoteInfo = MUKObjectCache;
+		};
+		06FD1504158495F100FDCD9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06FD14DB158495C400FDCD9E /* MUKNetworking.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0656683D1517A85A00DA53AA;
+			remoteInfo = MUKNetworking;
+		};
+		06FD1506158495F100FDCD9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06FD14E1158495C400FDCD9E /* MUKToolkit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 065793861523337F00D6762A;
+			remoteInfo = MUKToolkit;
+		};
+		06FD1508158495F100FDCD9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06FD14CE1584959E00FDCD9E /* MUKImageFetcher.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 06FD13D8158482D400FDCD9E;
+			remoteInfo = MUKImageFetcher;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		06FD140E1584834100FDCD9E /* MUKImageFetcherExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MUKImageFetcherExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +119,13 @@
 		06FD14201584834100FDCD9E /* MUKImageFetcherExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MUKImageFetcherExample-Prefix.pch"; sourceTree = "<group>"; };
 		06FD14211584834100FDCD9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		06FD14221584834100FDCD9E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		06FD14CA1584952200FDCD9E /* ImageFetcherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageFetcherViewController.h; sourceTree = "<group>"; };
+		06FD14CB1584952200FDCD9E /* ImageFetcherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageFetcherViewController.m; sourceTree = "<group>"; };
+		06FD14CE1584959E00FDCD9E /* MUKImageFetcher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MUKImageFetcher.xcodeproj; path = ../MUKImageFetcher.xcodeproj; sourceTree = "<group>"; };
+		06FD14DB158495C400FDCD9E /* MUKNetworking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MUKNetworking.xcodeproj; path = ../Submodules/MUKNetworking/MUKNetworking.xcodeproj; sourceTree = "<group>"; };
+		06FD14DE158495C400FDCD9E /* MUKObjectCache.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MUKObjectCache.xcodeproj; path = ../Submodules/MUKObjectCache/MUKObjectCache.xcodeproj; sourceTree = "<group>"; };
+		06FD14E1158495C400FDCD9E /* MUKToolkit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MUKToolkit.xcodeproj; path = ../Submodules/MUKToolkit/MUKToolkit.xcodeproj; sourceTree = "<group>"; };
+		06FD150E158495FF00FDCD9E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +133,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06FD150F158495FF00FDCD9E /* Security.framework in Frameworks */,
+				06FD150A158495F900FDCD9E /* libMUKImageFetcher.a in Frameworks */,
+				06FD150B158495F900FDCD9E /* libMUKNetworking.a in Frameworks */,
+				06FD150C158495F900FDCD9E /* libMUKObjectCache.a in Frameworks */,
+				06FD150D158495F900FDCD9E /* libMUKToolkit.a in Frameworks */,
 				06FD14131584834100FDCD9E /* UIKit.framework in Frameworks */,
 				06FD14151584834100FDCD9E /* Foundation.framework in Frameworks */,
 				06FD14171584834100FDCD9E /* CoreGraphics.framework in Frameworks */,
@@ -45,6 +150,7 @@
 		06FD14031584834100FDCD9E = {
 			isa = PBXGroup;
 			children = (
+				06FD14CD1584956D00FDCD9E /* Dependencies */,
 				06FD14181584834100FDCD9E /* MUKImageFetcherExample */,
 				06FD14111584834100FDCD9E /* Frameworks */,
 				06FD140F1584834100FDCD9E /* Products */,
@@ -62,6 +168,7 @@
 		06FD14111584834100FDCD9E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				06FD150E158495FF00FDCD9E /* Security.framework */,
 				06FD14121584834100FDCD9E /* UIKit.framework */,
 				06FD14141584834100FDCD9E /* Foundation.framework */,
 				06FD14161584834100FDCD9E /* CoreGraphics.framework */,
@@ -74,6 +181,8 @@
 			children = (
 				06FD14211584834100FDCD9E /* AppDelegate.h */,
 				06FD14221584834100FDCD9E /* AppDelegate.m */,
+				06FD14CA1584952200FDCD9E /* ImageFetcherViewController.h */,
+				06FD14CB1584952200FDCD9E /* ImageFetcherViewController.m */,
 				06FD14191584834100FDCD9E /* Supporting Files */,
 			);
 			path = MUKImageFetcherExample;
@@ -90,6 +199,53 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		06FD14CD1584956D00FDCD9E /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				06FD14DB158495C400FDCD9E /* MUKNetworking.xcodeproj */,
+				06FD14DE158495C400FDCD9E /* MUKObjectCache.xcodeproj */,
+				06FD14E1158495C400FDCD9E /* MUKToolkit.xcodeproj */,
+				06FD14CE1584959E00FDCD9E /* MUKImageFetcher.xcodeproj */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		06FD14CF1584959E00FDCD9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06FD14D81584959F00FDCD9E /* libMUKImageFetcher.a */,
+				06FD14DA1584959F00FDCD9E /* MUKImageFetcherTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06FD14DC158495C400FDCD9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06FD14F1158495C500FDCD9E /* libMUKNetworking.a */,
+				06FD14F3158495C500FDCD9E /* MUKNetworkingTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06FD14DF158495C400FDCD9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06FD14F8158495C500FDCD9E /* libMUKObjectCache.a */,
+				06FD14FA158495C500FDCD9E /* MUKObjectCacheTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06FD14E2158495C400FDCD9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06FD14FF158495C500FDCD9E /* libMUKToolkit.a */,
+				06FD1501158495C500FDCD9E /* MUKToolkitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -104,6 +260,10 @@
 			buildRules = (
 			);
 			dependencies = (
+				06FD1503158495F100FDCD9E /* PBXTargetDependency */,
+				06FD1505158495F100FDCD9E /* PBXTargetDependency */,
+				06FD1507158495F100FDCD9E /* PBXTargetDependency */,
+				06FD1509158495F100FDCD9E /* PBXTargetDependency */,
 			);
 			name = MUKImageFetcherExample;
 			productName = MUKImageFetcherExample;
@@ -128,12 +288,89 @@
 			mainGroup = 06FD14031584834100FDCD9E;
 			productRefGroup = 06FD140F1584834100FDCD9E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 06FD14CF1584959E00FDCD9E /* Products */;
+					ProjectRef = 06FD14CE1584959E00FDCD9E /* MUKImageFetcher.xcodeproj */;
+				},
+				{
+					ProductGroup = 06FD14DC158495C400FDCD9E /* Products */;
+					ProjectRef = 06FD14DB158495C400FDCD9E /* MUKNetworking.xcodeproj */;
+				},
+				{
+					ProductGroup = 06FD14DF158495C400FDCD9E /* Products */;
+					ProjectRef = 06FD14DE158495C400FDCD9E /* MUKObjectCache.xcodeproj */;
+				},
+				{
+					ProductGroup = 06FD14E2158495C400FDCD9E /* Products */;
+					ProjectRef = 06FD14E1158495C400FDCD9E /* MUKToolkit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				06FD140D1584834100FDCD9E /* MUKImageFetcherExample */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		06FD14D81584959F00FDCD9E /* libMUKImageFetcher.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMUKImageFetcher.a;
+			remoteRef = 06FD14D71584959F00FDCD9E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		06FD14DA1584959F00FDCD9E /* MUKImageFetcherTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MUKImageFetcherTests.octest;
+			remoteRef = 06FD14D91584959F00FDCD9E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		06FD14F1158495C500FDCD9E /* libMUKNetworking.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMUKNetworking.a;
+			remoteRef = 06FD14F0158495C500FDCD9E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		06FD14F3158495C500FDCD9E /* MUKNetworkingTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MUKNetworkingTests.octest;
+			remoteRef = 06FD14F2158495C500FDCD9E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		06FD14F8158495C500FDCD9E /* libMUKObjectCache.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMUKObjectCache.a;
+			remoteRef = 06FD14F7158495C500FDCD9E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		06FD14FA158495C500FDCD9E /* MUKObjectCacheTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MUKObjectCacheTests.octest;
+			remoteRef = 06FD14F9158495C500FDCD9E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		06FD14FF158495C500FDCD9E /* libMUKToolkit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMUKToolkit.a;
+			remoteRef = 06FD14FE158495C500FDCD9E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		06FD1501158495C500FDCD9E /* MUKToolkitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MUKToolkitTests.octest;
+			remoteRef = 06FD1500158495C500FDCD9E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		06FD140C1584834100FDCD9E /* Resources */ = {
@@ -153,10 +390,34 @@
 			files = (
 				06FD141F1584834100FDCD9E /* main.m in Sources */,
 				06FD14231584834100FDCD9E /* AppDelegate.m in Sources */,
+				06FD14CC1584952200FDCD9E /* ImageFetcherViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06FD1503158495F100FDCD9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MUKObjectCache;
+			targetProxy = 06FD1502158495F100FDCD9E /* PBXContainerItemProxy */;
+		};
+		06FD1505158495F100FDCD9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MUKNetworking;
+			targetProxy = 06FD1504158495F100FDCD9E /* PBXContainerItemProxy */;
+		};
+		06FD1507158495F100FDCD9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MUKToolkit;
+			targetProxy = 06FD1506158495F100FDCD9E /* PBXContainerItemProxy */;
+		};
+		06FD1509158495F100FDCD9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MUKImageFetcher;
+			targetProxy = 06FD1508158495F100FDCD9E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		06FD141B1584834100FDCD9E /* InfoPlist.strings */ = {
@@ -191,6 +452,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -210,6 +472,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -256,6 +519,7 @@
 				06FD14281584834100FDCD9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
