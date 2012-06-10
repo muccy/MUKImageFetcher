@@ -15,6 +15,10 @@
 		06FD13F1158482D400FDCD9E /* libMUKImageFetcher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06FD13D9158482D400FDCD9E /* libMUKImageFetcher.a */; };
 		06FD13F7158482D400FDCD9E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06FD13F5158482D400FDCD9E /* InfoPlist.strings */; };
 		06FD13FA158482D400FDCD9E /* MUKImageFetcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FD13F9158482D400FDCD9E /* MUKImageFetcherTests.m */; };
+		06FD1450158485E000FDCD9E /* MUKObjectCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 06FD144F158485E000FDCD9E /* MUKObjectCache.h */; };
+		06FD1454158485EF00FDCD9E /* MUKURLConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 06FD1451158485EF00FDCD9E /* MUKURLConnection.h */; };
+		06FD1455158485EF00FDCD9E /* MUKNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 06FD1452158485EF00FDCD9E /* MUKNetworking.h */; };
+		06FD1456158485EF00FDCD9E /* MUKURLConnectionQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 06FD1453158485EF00FDCD9E /* MUKURLConnectionQueue.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,10 @@
 		06FD13F6158482D400FDCD9E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		06FD13F8158482D400FDCD9E /* MUKImageFetcherTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MUKImageFetcherTests.h; sourceTree = "<group>"; };
 		06FD13F9158482D400FDCD9E /* MUKImageFetcherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MUKImageFetcherTests.m; sourceTree = "<group>"; };
+		06FD144F158485E000FDCD9E /* MUKObjectCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MUKObjectCache.h; path = Submodules/MUKObjectCache/MUKObjectCache/MUKObjectCache.h; sourceTree = SOURCE_ROOT; };
+		06FD1451158485EF00FDCD9E /* MUKURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MUKURLConnection.h; path = "Submodules/MUKNetworking/MUKNetworking/Classes/URL Connection/MUKURLConnection.h"; sourceTree = SOURCE_ROOT; };
+		06FD1452158485EF00FDCD9E /* MUKNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MUKNetworking.h; path = Submodules/MUKNetworking/MUKNetworking/MUKNetworking.h; sourceTree = SOURCE_ROOT; };
+		06FD1453158485EF00FDCD9E /* MUKURLConnectionQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MUKURLConnectionQueue.h; path = Submodules/MUKNetworking/MUKNetworking/Classes/Queue/MUKURLConnectionQueue.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,7 @@
 		06FD13DF158482D400FDCD9E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				06FD142F1584853F00FDCD9E /* Dependencies Headers */,
 				06FD13E0158482D400FDCD9E /* MUKImageFetcher-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -131,6 +140,33 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		06FD142F1584853F00FDCD9E /* Dependencies Headers */ = {
+			isa = PBXGroup;
+			children = (
+				06FD144E158485CE00FDCD9E /* MUKNetworking */,
+				06FD144D158485A200FDCD9E /* MUKObjectCache */,
+			);
+			name = "Dependencies Headers";
+			sourceTree = "<group>";
+		};
+		06FD144D158485A200FDCD9E /* MUKObjectCache */ = {
+			isa = PBXGroup;
+			children = (
+				06FD144F158485E000FDCD9E /* MUKObjectCache.h */,
+			);
+			name = MUKObjectCache;
+			sourceTree = "<group>";
+		};
+		06FD144E158485CE00FDCD9E /* MUKNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				06FD1451158485EF00FDCD9E /* MUKURLConnection.h */,
+				06FD1452158485EF00FDCD9E /* MUKNetworking.h */,
+				06FD1453158485EF00FDCD9E /* MUKURLConnectionQueue.h */,
+			);
+			name = MUKNetworking;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -138,6 +174,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06FD1450158485E000FDCD9E /* MUKObjectCache.h in Headers */,
+				06FD1454158485EF00FDCD9E /* MUKURLConnection.h in Headers */,
+				06FD1455158485EF00FDCD9E /* MUKNetworking.h in Headers */,
+				06FD1456158485EF00FDCD9E /* MUKURLConnectionQueue.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +427,7 @@
 				06FD13FF158482D400FDCD9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		06FD1400158482D400FDCD9E /* Build configuration list for PBXNativeTarget "MUKImageFetcherTests" */ = {
 			isa = XCConfigurationList;
@@ -395,6 +436,7 @@
 				06FD1402158482D400FDCD9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
