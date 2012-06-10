@@ -130,6 +130,7 @@
 		06FD14791584879800FDCD9E /* MUK+Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MUK+Data.h"; path = "Submodules/MUKToolkit/MUKToolkit/Classes/Data/MUK+Data.h"; sourceTree = SOURCE_ROOT; };
 		06FD149E1584895D00FDCD9E /* MUKImageFetcherURLConnectionQueue_.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUKImageFetcherURLConnectionQueue_.h; sourceTree = "<group>"; };
 		06FD149F1584895D00FDCD9E /* MUKImageFetcherURLConnectionQueue_.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUKImageFetcherURLConnectionQueue_.m; sourceTree = "<group>"; };
+		06FD14B1158489E700FDCD9E /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +159,7 @@
 		06FD13CE158482D300FDCD9E = {
 			isa = PBXGroup;
 			children = (
+				06FD14B1158489E700FDCD9E /* LICENSE */,
 				06FD13DE158482D400FDCD9E /* MUKImageFetcher */,
 				06FD13F2158482D400FDCD9E /* MUKImageFetcherTests */,
 				06FD13DB158482D400FDCD9E /* Frameworks */,
@@ -187,9 +189,9 @@
 		06FD13DE158482D400FDCD9E /* MUKImageFetcher */ = {
 			isa = PBXGroup;
 			children = (
-				06FD149D1584894900FDCD9E /* Private Classes */,
 				06FD13E1158482D400FDCD9E /* MUKImageFetcher.h */,
 				06FD13E2158482D400FDCD9E /* MUKImageFetcher.m */,
+				06FD149D1584894900FDCD9E /* Private Classes */,
 				06FD13DF158482D400FDCD9E /* Supporting Files */,
 			);
 			path = MUKImageFetcher;
