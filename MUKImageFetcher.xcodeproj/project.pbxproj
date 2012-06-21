@@ -103,7 +103,7 @@
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = MUK/DependenciesHeaders/MUKToolkit;
-			dstSubfolderSpec = 7;
+			dstSubfolderSpec = 16;
 			files = (
 				06FD1484158487C500FDCD9E /* MUKToolkit.h in Copy MUKToolkit public headers */,
 				06FD1485158487C500FDCD9E /* MUK.h in Copy MUKToolkit public headers */,
@@ -149,9 +149,9 @@
 		06FD149E1584895D00FDCD9E /* MUKImageFetcherURLConnectionQueue_.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUKImageFetcherURLConnectionQueue_.h; sourceTree = "<group>"; };
 		06FD149F1584895D00FDCD9E /* MUKImageFetcherURLConnectionQueue_.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUKImageFetcherURLConnectionQueue_.m; sourceTree = "<group>"; };
 		06FD14B1158489E700FDCD9E /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		06FD14B715848B5A00FDCD9E /* libMUKNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libMUKNetworking.a; path = "Submodules/MUKNetworking/build/Release-iphoneos/libMUKNetworking.a"; sourceTree = "<group>"; };
-		06FD14B815848B5A00FDCD9E /* libMUKObjectCache.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libMUKObjectCache.a; path = "Submodules/MUKObjectCache/build/Release-iphoneos/libMUKObjectCache.a"; sourceTree = "<group>"; };
-		06FD14B915848B5A00FDCD9E /* libMUKToolkit.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libMUKToolkit.a; path = "Submodules/MUKToolkit/build/Release-iphoneos/libMUKToolkit.a"; sourceTree = "<group>"; };
+		06FD14B715848B5A00FDCD9E /* libMUKNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMUKNetworking.a; path = "Submodules/MUKNetworking/build/Release-iphoneos/libMUKNetworking.a"; sourceTree = "<group>"; };
+		06FD14B815848B5A00FDCD9E /* libMUKObjectCache.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMUKObjectCache.a; path = "Submodules/MUKObjectCache/build/Release-iphoneos/libMUKObjectCache.a"; sourceTree = "<group>"; };
+		06FD14B915848B5A00FDCD9E /* libMUKToolkit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMUKToolkit.a; path = "Submodules/MUKToolkit/build/Release-iphoneos/libMUKToolkit.a"; sourceTree = "<group>"; };
 		06FD14BD15848D8800FDCD9E /* Steve-Jobs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Steve-Jobs.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -516,6 +516,7 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -539,6 +540,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -557,6 +559,7 @@
 				DSTROOT = /tmp/MUKImageFetcher.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MUKImageFetcher/MUKImageFetcher-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
 				HEADER_SEARCH_PATHS = "${BUILT_PRODUCTS_DIR}/MUK/DependenciesHeaders";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -570,6 +573,7 @@
 				DSTROOT = /tmp/MUKImageFetcher.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MUKImageFetcher/MUKImageFetcher-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
 				HEADER_SEARCH_PATHS = "${BUILT_PRODUCTS_DIR}/MUK/DependenciesHeaders";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -586,6 +590,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MUKImageFetcher/MUKImageFetcher-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "MUKImageFetcherTests/MUKImageFetcherTests-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -602,6 +607,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MUKImageFetcher/MUKImageFetcher-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "MUKImageFetcherTests/MUKImageFetcherTests-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -612,6 +618,7 @@
 		06FD14B415848A1E00FDCD9E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_THUMB_SUPPORT = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -619,6 +626,7 @@
 		06FD14B515848A1E00FDCD9E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_THUMB_SUPPORT = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -660,6 +668,7 @@
 				06FD14B515848A1E00FDCD9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
