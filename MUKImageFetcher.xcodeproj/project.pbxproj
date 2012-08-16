@@ -459,7 +459,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MUKImageFetcher/MUKImageFetcher-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
-				HEADER_SEARCH_PATHS = "${BUILT_PRODUCTS_DIR}/MUK_DependenciesHeaders/";
+				HEADER_SEARCH_PATHS = "\"${BUILT_PRODUCTS_DIR}/MUK_DependenciesHeaders/\"";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -473,7 +473,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MUKImageFetcher/MUKImageFetcher-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
-				HEADER_SEARCH_PATHS = "${BUILT_PRODUCTS_DIR}/MUK_DependenciesHeaders/";
+				HEADER_SEARCH_PATHS = "\"${BUILT_PRODUCTS_DIR}/MUK_DependenciesHeaders/\"";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
