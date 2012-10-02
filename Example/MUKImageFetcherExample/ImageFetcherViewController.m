@@ -79,8 +79,7 @@
 #pragma mark - Private
 
 - (NSArray *)newPhotosArray_ {
-    return [[NSArray alloc] initWithObjects:
-            [ImageFetcherPhoto_ photoWithTitle:@"B-1 Bomber" URL:@"http://farm5.staticflickr.com/4013/4255994218_258e428f5e_s.jpg"],
+    return @[[ImageFetcherPhoto_ photoWithTitle:@"B-1 Bomber" URL:@"http://farm5.staticflickr.com/4013/4255994218_258e428f5e_s.jpg"],
             [ImageFetcherPhoto_ photoWithTitle:@"Molière" URL:@"http://farm6.staticflickr.com/5169/5282437338_b8a6641e47_s.jpg"],
             [ImageFetcherPhoto_ photoWithTitle:@"Guitar" URL:@"http://farm6.staticflickr.com/5244/5343236121_63a192ee5e_s.jpg"],
             [ImageFetcherPhoto_ photoWithTitle:@"Bass Player" URL:@"http://farm6.staticflickr.com/5191/7001948910_992ca47e77_s.jpg"],
@@ -95,8 +94,7 @@
             [ImageFetcherPhoto_ photoWithTitle:@"Chrysanthemums" URL:@"http://farm8.staticflickr.com/7125/7123894151_c6e1282522_s.jpg"],
             [ImageFetcherPhoto_ photoWithTitle:@"Landscape" URL:@"http://farm6.staticflickr.com/5345/7160165138_727ba5195a_s.jpg"],
             [ImageFetcherPhoto_ photoWithTitle:@"Faro" URL:@"http://farm8.staticflickr.com/7126/7006571278_d8e65cb330_s.jpg"],
-            [ImageFetcherPhoto_ photoWithTitle:@"Hop" URL:@"http://farm8.staticflickr.com/7237/6969715530_a39f44a816_s.jpg"],
-            nil];
+            [ImageFetcherPhoto_ photoWithTitle:@"Hop" URL:@"http://farm8.staticflickr.com/7237/6969715530_a39f44a816_s.jpg"]];
 }
 
 - (MUKImageFetcher *)newImageFetcher_ {
@@ -163,7 +161,7 @@
         }
         
         // Save index path on same connection
-        resultConnection = [[fetcher.connectionQueue connections] objectAtIndex:sameConnectionIndex];
+        resultConnection = [fetcher.connectionQueue connections][sameConnectionIndex];
         NSMutableSet *indexPaths = resultConnection.userInfo;
         [indexPaths addObject:indexPath];
     }
@@ -289,7 +287,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
-    ImageFetcherPhoto_ *photo = [self.photos_ objectAtIndex:indexPath.row];
+    ImageFetcherPhoto_ *photo = (self.photos_)[indexPath.row];
     cell.textLabel.text = photo.title;
     
     [self loadThumbnailAtIndexPath_:indexPath onlyFromMemory_:YES completionHandler_:^(UIImage *image, NSSet *indexPaths) 
