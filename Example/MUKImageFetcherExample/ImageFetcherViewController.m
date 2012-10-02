@@ -100,20 +100,26 @@
 - (MUKImageFetcher *)newImageFetcher_ {
     MUKImageFetcher *imageFetcher = [[MUKImageFetcher alloc] init];
     
-    __unsafe_unretained ImageFetcherViewController *weakSelf = self;
+    __weak ImageFetcherViewController *weakSelf = self;
     imageFetcher.shouldStartConnectionHandler = ^BOOL (MUKURLConnection *connection)
     {
-        // I want to start connection if any of index paths are visible
-        NSArray *visibleIndexPaths = [weakSelf.tableView indexPathsForVisibleRows];
-        
-        NSSet *indexPaths = [connection.userInfo copy];
+        // I want to start connection if any of index paths is visible
         __block BOOL anyIndexPathIsVisible = NO;
-        [indexPaths enumerateObjectsUsingBlock:^(id obj, BOOL *stop) {
-            if ([visibleIndexPaths containsObject:obj]) {
-                anyIndexPathIsVisible = YES;
-                *stop = YES;
-            }
-        }];
+        
+        if (weakSelf) {
+            ImageFetcherViewController *strongSelf = weakSelf;
+            
+            NSArray *visibleIndexPaths = [strongSelf.tableView indexPathsForVisibleRows];
+            
+            NSSet *indexPaths = [connection.userInfo copy];
+            [indexPaths enumerateObjectsUsingBlock:^(id obj, BOOL *stop)
+            {
+                if ([visibleIndexPaths containsObject:obj]) {
+                    anyIndexPathIsVisible = YES;
+                    *stop = YES;
+                }
+            }];
+        }
         
         return anyIndexPathIsVisible;
     };
@@ -208,7 +214,7 @@
 #if USE_FILE_CACHE
         cacheLocations = MUKObjectCacheLocationLocal;
 #else
-        cacheLocations = MUKObjectCacheLocationNone;
+        cacheLocations = MUKObjectCacheLocationMemory;
 #endif
     }
     
