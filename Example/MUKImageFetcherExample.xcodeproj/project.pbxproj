@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		065911CB161B1A6C002E5D03 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 065911CA161B1A6C002E5D03 /* Default-568h@2x.png */; };
 		06FD14131584834100FDCD9E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06FD14121584834100FDCD9E /* UIKit.framework */; };
 		06FD14151584834100FDCD9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06FD14141584834100FDCD9E /* Foundation.framework */; };
 		06FD14171584834100FDCD9E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06FD14161584834100FDCD9E /* CoreGraphics.framework */; };
@@ -109,6 +110,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		065911CA161B1A6C002E5D03 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		06FD140E1584834100FDCD9E /* MUKImageFetcherExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MUKImageFetcherExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06FD14121584834100FDCD9E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		06FD14141584834100FDCD9E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -191,6 +193,7 @@
 		06FD14191584834100FDCD9E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				065911CA161B1A6C002E5D03 /* Default-568h@2x.png */,
 				06FD141A1584834100FDCD9E /* MUKImageFetcherExample-Info.plist */,
 				06FD141B1584834100FDCD9E /* InfoPlist.strings */,
 				06FD141E1584834100FDCD9E /* main.m */,
@@ -378,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06FD141D1584834100FDCD9E /* InfoPlist.strings in Resources */,
+				065911CB161B1A6C002E5D03 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
