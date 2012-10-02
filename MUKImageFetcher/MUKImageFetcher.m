@@ -53,11 +53,15 @@
         connectionQueue_ = [[MUKImageFetcherURLConnectionQueue_ alloc] init];
         connectionQueue_.maximumConcurrentConnections = 1;
         
-        __unsafe_unretained MUKImageFetcher *weakSelf = self;
+        __weak MUKImageFetcher *weakSelf = self;
         connectionQueue_.connectionWillStartHandler = ^(MUKURLConnection *connection)
         {
-            if (![weakSelf shouldStartConnection_:connection]) {
-                [connection cancel];
+            if (weakSelf) {
+                MUKImageFetcher *strongSelf = weakSelf;
+                
+                if (![strongSelf shouldStartConnection_:connection]) {
+                    [connection cancel];
+                }
             }
         };
         
